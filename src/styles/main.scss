@@ -1,9 +1,11 @@
+@use 'product';
+@use 'values';
 @use 'about';
 @use 'buttons';
 @use 'helpers';
 @use 'mixins';
 @use 'typography';
-@use 'variables';
+@use 'variables' as *;
 @use 'hero';
 @use 'header';
 
@@ -23,3 +25,6 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: $backgroundColorPrimary;
+}

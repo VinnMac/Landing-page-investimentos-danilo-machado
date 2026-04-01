@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.values {
+    width: 100%;
+    background-color: $backgroundColorSecondary;
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        padding: 4rem 0;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: .75rem;
+            width: 70%;
+        }
+
+        h3{
+            color: $textColorSecondary;
+            text-transform: uppercase;
+            letter-spacing: .06rem;
+        }
+
+        svg {
+            color: $textColorTertiary;
+            filter: drop-shadow(0 0 6px rgba($textColorTertiary, 0.3));
+        }
+    }
+}
