@@ -5,12 +5,13 @@
     position: relative;
     z-index: 10;
     background: transparent;
+    font-family: "Bebas Neue", sans-serif;
 
     .container {
         display: flex;
         align-items: center;
         padding-bottom: 8px;
-        border-bottom: 1px solid $borderColor;
+        border-bottom: 1px solid rgba($borderColor, .15)
     }
 
     &__brand {
@@ -28,8 +29,6 @@
     &__nav-list {
             display: flex;
             gap: 4rem;
-            text-transform: uppercase;
-            letter-spacing: .05rem;
 
             a {
                 color: $textColorSecondary;

@@ -10,9 +10,10 @@
     border-radius: 1rem;
 }
 
-.section-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        align-items: center;
+.about__content {
+@include section-grid;
+}
+
+.ebook__content {
+@include section-grid;
 }

@@ -5,23 +5,23 @@
     margin-bottom: 4rem;
 
     .title--section {
-        margin-bottom: 0;
+        margin-bottom: .2rem;
     }
 
     .subtitle--section {
         margin: 0 auto 4rem
     }
 
-    &-text {
+    &__info {
         text-align: left;
     }
 
-    &-statistics {
+    &__statistics {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 3rem;
 
-        &__item {
+        &-item {
             text-align: center;
             position: relative;
             padding-left: .6rem;
@@ -33,7 +33,7 @@
                 top: 15%;
                 height: 70%;
                 width: 1px;
-                background-color: #e4e4e4;
+                background-color: rgba($borderColor, .3);
             }
 
             &:first-child {
@@ -46,8 +46,7 @@
         }
     }
 
-    &-img {
-
+    &__image {
         img {
             object-fit: cover;
             width: 100%;

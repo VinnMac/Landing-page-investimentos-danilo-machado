@@ -1,11 +1,11 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-.btn-hero {
+.btn--hero {
     @include button;
     background: transparent;
     margin-top: 1.2rem;
-    padding: .5rem 1.2rem;
+    padding: .6rem 1.2rem;
     letter-spacing: .03rem;
     font-weight: 700;
 
