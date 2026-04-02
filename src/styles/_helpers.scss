@@ -5,6 +5,10 @@
     @include highlight;
 }
 
+.highlight--premium {
+    filter: drop-shadow(0 0 6px rgba($textColorTertiary, 0.4));
+}
+
 .section-image {
     display: block;
     border-radius: 1.5rem;
