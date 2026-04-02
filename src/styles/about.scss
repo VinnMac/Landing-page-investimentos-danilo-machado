@@ -53,7 +53,12 @@
         }
     }
 
+    .btn {
+        display: flex;
+        align-items: center;
+    }
+
     a > svg {
-        margin-left: .3rem;
+        margin-left: .4rem;
     }
 }
