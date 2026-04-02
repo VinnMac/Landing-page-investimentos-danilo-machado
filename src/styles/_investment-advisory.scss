@@ -1,0 +1,81 @@
+@use 'variables' as *;
+
+.investment-advisory {
+    .container {
+        position: relative;
+    padding: 4rem 0;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        top: 25%;
+        z-index: -1;
+        background:
+            /* Gradiente da esquerda (cobre o texto) */
+        linear-gradient(to right, $backgroundColorPrimary 47%, transparent 62%),
+        /* Gradiente do topo */
+        linear-gradient(to bottom, $backgroundColorPrimary 0, transparent 22%),
+        /* Gradiente de baixo */
+        linear-gradient(to top, $backgroundColorPrimary 0, transparent 22%),
+        /* Gradiente da direita */
+        linear-gradient(to left, $backgroundColorPrimary 0, transparent 15%),
+        /* Imagem */
+            url('../assets/images/danilo-advisory-wrap.png') right center / 68% auto no-repeat;
+    }
+
+    
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+        max-width: 540px;
+
+        h2 {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .btn {
+            margin-left: 0;
+            margin-top: 0;
+            padding: .5rem 6rem;
+            box-shadow: 0 10px 25px rgba($textColorTertiary, .25);
+            transition: all .3s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 14px 35px rgba($textColorTertiary, .35);
+            }
+
+            svg {
+                margin-left: .2rem;
+            }
+        }
+    }
+
+    &__benefits {
+        &-item {
+            display: flex;
+            align-items: center;
+            margin: 1.2rem 0;
+        }
+
+        &-icon {
+            background: rgba($textColorTertiary, .12);
+  border-radius: 50%;
+  padding: .45rem;
+            margin-right: .45rem;
+            color: $textColorTertiary;
+        }
+
+        &-description {
+            margin-left: 2.5rem;
+        }
+    }
+}

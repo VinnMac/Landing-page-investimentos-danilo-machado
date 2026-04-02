@@ -1,19 +1,23 @@
 @use 'mixins' as *;
 @use 'variables' as *;
 
-.highligth {
+.highlight {
     @include highlight;
 }
 
 .section-image {
     display: block;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 }
 
 .about__content {
 @include section-grid;
 }
 
-.ebook__content {
+.product__content {
+@include section-grid;
+}
+
+.investment-advisory__content {
 @include section-grid;
 }

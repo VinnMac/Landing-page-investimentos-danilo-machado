@@ -48,9 +48,4 @@
         text-wrap: balance;
         z-index: 1;
     }
-
-    .highlight{
-    @include highlight;
-    
-    }
 }
