@@ -1,56 +1,94 @@
-@use 'variables' as *;
+    @use 'variables' as *;
+    @use 'mixins' as *;
 
-.header {
-    margin-top: 2rem;
-    position: relative;
-    z-index: 10;
-    background: transparent;
-    font-family: "Bebas Neue", sans-serif;
+    .header {
+        position: relative;
+        z-index: 10;
+        background: transparent;
+        font-family: "Bebas Neue", sans-serif;
 
-    .container {
-        display: flex;
-        align-items: center;
-        padding-bottom: 8px;
-        border-bottom: 1px solid rgba($borderColor, .15)
-    }
-
-    &__brand {
-        img {
-            width: 160px;
-        }
-    }
-
-    &__navbar {
-        width: 50%;
-        display: flex;
-        justify-content: center
-    }
-
-    &__nav-list {
+        .container {
             display: flex;
-            gap: 2rem;
+            align-items: center;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba($borderColor, .15)
+        }
 
-            a {
-                color: $textColorSecondary;
+        &__brand {
+            img {
+                width: 160px;
             }
         }
 
-    .social-links {
-        width: 50%;
-
-        &__list {
+        &__navbar {
+            width: 50%;
             display: flex;
-            justify-content: end;
-            gap: 1.2rem;
+            justify-content: center
         }
 
-        &__link {
-            color: $borderColor;
+        &__nav-list {
+                display: flex;
+                gap: 2rem;
+
+                a {
+                    color: $textColorSecondary;
+                }
+            }
+
+        .social-links {
+            width: 50%;
+
+            &__list {
+                display: flex;
+                justify-content: end;
+                gap: 1.2rem;
+            }
+
+            &__link {
+                color: $borderColor;
+            }
+        }
+
+        a:hover {
+            color: $textColorTertiary;
+            transition: .2s ease color;
+        }
+
+        @media (max-width: 768px) {
+            height: 3rem;
+
+            &__navbar, &__brand,
+            .social-links, 
+            .container {
+                display: none;
+            }
+
+            
         }
     }
 
-    a:hover {
-        color: $textColorTertiary;
-        transition: .2s ease color;
+    .topbar-mobile,
+    .nav-mobile {
+            display: none;
+        }
+
+    @media (max-width: 768px) {
+        .topbar-mobile {
+                @include mobile-bar;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                img {
+                    width: 120px;
+                }
+        }
+
+        .nav-mobile {
+            @include mobile-bar;
+            background: transparent;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
     }
-}
