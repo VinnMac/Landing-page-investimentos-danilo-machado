@@ -13,7 +13,7 @@
       <div class="header__brand">
         <a href="#" aria-label="Ir para a página inicial"><img src="./src/assets/images/brand2.png" alt="Jorge Machado Investimentos"></a>
       </div>
-      <nav class="header__navbar" aria-label="Menu principal">
+      <nav class="header__navbar" id="nav" aria-label="Menu principal">
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a class="text--bg" href="#about">Sobre</a>
@@ -29,7 +29,7 @@
           </li>
         </ul>
       </nav>
-      <nav class="social-links" aria-label="Redes sociais">
+      <nav class="social-links" id="nav-social" aria-label="Redes sociais">
         <ul class="social-links__list">
           <li class="social-links__item">
             <a class="social-links__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Threads de Jorge Danilo">
@@ -72,16 +72,37 @@
       <a href="#" aria-label="Ir para a página inicial"><img src="./src/assets/images/brand2.png" alt="Jorge Machado Investimentos"></a>
     </div>
     <div class="nav-mobile">
-      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
-</svg></a>
+      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+      </svg></a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Menu principal Mobile">
+        <ul class="menu-mobile__nav-list">
+          <li class="menu-mobile__nav-item">
+            <a class="" href="#about">Sobre</a>
+          </li>
+          <li class="menu-mobile__nav-item">
+            <a class="" href="#investment-advisory">Assessoria</a>
+          </li>
+          <li class="menu-mobile__nav-item">
+            <a class="" href="#product">E-book</a>
+          </li>
+          <li class="menu-mobile__nav-item">
+            <a class="" href="#">Mentoria</a>
+          </li>
+        </ul>
+      </nav>
   <section class="hero">
     <img class="hero__image" src="./src/assets/images/bg-danilo.jpg" alt="Dono da página de investimentos de braços cruzados.">
     <div class="container">
       <div class="hero__content">
         <h1 class="text--hero">Assessoria estratégica de investimentos para resultados <span class="text--hero highlight">consistentes</span></h1>
-        <a class="text--ssm btn--hero" href="">Entrar no grupo exclusivo</a>
+        <a class="text--ssm btn--hero" href="#">Entrar no grupo exclusivo</a>
       </div>
     </div>
   </section>

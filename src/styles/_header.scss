@@ -53,26 +53,46 @@
             color: $textColorTertiary;
             transition: .2s ease color;
         }
-
-        @media (max-width: 768px) {
-            height: 3rem;
-
-            &__navbar, &__brand,
-            .social-links, 
-            .container {
-                display: none;
-            }
-
-            
-        }
     }
 
     .topbar-mobile,
-    .nav-mobile {
+    .nav-mobile,
+    .menu-mobile {
             display: none;
         }
 
     @media (max-width: 768px) {
+        .header .container {
+            display: none;
+        }
+
+        .header {
+            height: 3rem;
+        }
+
+        .menu-mobile {
+                background-color: $borderColor;
+                display: block;
+                position: fixed;
+                top: 4rem;
+                left: -100%;
+                width: 100%;
+                max-width: 240px;
+                padding: 1rem;
+                height: 100vh;
+                overflow: hidden;
+                transition: 0.3s;
+                z-index: 3;
+
+                &-list {
+                    
+                }
+
+                &--open {
+                    left: 0;
+                }
+            }
+
         .topbar-mobile {
                 @include mobile-bar;
                 top: 0;
@@ -80,15 +100,33 @@
                 right: 0;
 
                 img {
-                    width: 120px;
+                    width: 140px;
+                    display: block;
                 }
         }
 
         .nav-mobile {
             @include mobile-bar;
-            background: transparent;
             left: 0;
             right: 0;
             bottom: 0;
+
+            a {
+                color: $textColorSecondary;
+            }
+
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                gap: 5px;
+
+                span {
+                    background-color: $textColorSecondary;
+                    width: 24px;
+                    height: 3px;
+                    transform: .3s;
+                }
+            }
         }
     }

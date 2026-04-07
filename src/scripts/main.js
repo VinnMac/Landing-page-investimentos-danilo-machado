@@ -1,5 +1,6 @@
-const teste = () => {
-    console.log('Hello JS');
-}
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('menu-mobile');
 
-teste();
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('menu-mobile--open');
+});
