@@ -48,4 +48,18 @@
         text-wrap: balance;
         z-index: 1;
     }
+
+    @media (max-width: 768px) {
+        height: 70vh;
+
+        &__image {
+            object-position: 60% center; 
+        }
+
+        &__content {
+            max-width: 380px;
+            top: 8%;
+            left: 12%;
+        }
+    }
 }

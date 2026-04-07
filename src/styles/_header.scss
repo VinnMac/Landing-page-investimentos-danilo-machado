@@ -162,6 +162,7 @@
 
         .nav-mobile {
             @include mobile-bar;
+            border-top: 1px solid rgba(255,255,255,0.1);
             left: 0;
             right: 0;
             bottom: 0;
@@ -177,7 +178,7 @@
                 gap: 5px;
 
                 &--active span:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
+                    transform: rotate(45deg) translate(6px, 5px);
                 }
                 
                 &--active span:nth-child(2) {
@@ -185,7 +186,7 @@
                 }
 
                 &--active span:nth-child(3) {
-                    transform: rotate(-45deg) translate(5px, -5px);
+                    transform: rotate(-45deg) translate(6px, -5px);
                 }
 
                 span {
