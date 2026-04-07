@@ -8,6 +8,15 @@ const mobileNavLinks = document.querySelectorAll('.menu-mobile__nav-link');
 
 const sections = document.querySelectorAll('section[id]');
 
+document.querySelector('.home').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+})
+
 const toggleMenu = () => {
     hamburger.classList.toggle('hamburger--active');
     nav.classList.toggle('menu-mobile--open');
