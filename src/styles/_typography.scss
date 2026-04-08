@@ -13,6 +13,14 @@
     @include text(1.2rem, 400);
     letter-spacing: .1rem;
     text-transform: uppercase;
+    
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 }
 
 .text--hero {
@@ -20,21 +28,37 @@
     font-family: "Montserrat Alternates", sans-serif;
     color: $textColorSecondary;
 
+    @media (max-width: 1024px) {
+        @include title(2.7rem, 600, 1.01, .1rem);
+        color: $textColorSecondary;
+    }
+
     @media (max-width: 768px) {
-        @include title(2.5rem, 600, 1.05, .1rem);
+        @include title(2.5rem, 600, 1.02, .1rem);
         color: $textColorSecondary;
     }
 }
 
 .title--sm {
     @include title(1.6rem);
-    letter-spacing: .07rem
+    letter-spacing: .07rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.3rem;
+        letter-spacing: .05;
+    }
+    
 }
 
 .title {
     @include title;
     margin-bottom: 1rem;
-    letter-spacing: .1rem
+    letter-spacing: .1rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+    }
+    
 }
 
 .title--bg {
@@ -48,7 +72,7 @@
     text-align: center;
     
     @media (max-width: 768px) {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin: 3rem 0;
     }
 }
@@ -59,5 +83,9 @@
     color: $subtitleColor;
     text-align: center;
     max-width: 520px;
+
+    @media (max-width: 768px) {
+        font-size: .85rem;
+    }
     
 }

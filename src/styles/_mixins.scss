@@ -31,6 +31,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 @mixin mobile-bar {

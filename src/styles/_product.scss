@@ -2,6 +2,11 @@
 
 .product {
 
+    .title--section {
+        text-align: left;
+        margin-bottom: 4rem;
+    }
+
     &__content {
         grid-template-columns: .5fr 1.5fr;
     }
@@ -32,5 +37,18 @@
             filter: drop-shadow(0 30px 50px rgba(0,0,0,.25));
         }
         }
+    }
+
+    @media (max-width: 768px) {
+
+        .title--section {
+        margin-bottom: 3rem;
+        }
+
+        &__midia {
+                img {
+                    width: 240px;
+                }
+            }
     }
 }

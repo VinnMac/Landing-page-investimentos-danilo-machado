@@ -9,7 +9,7 @@
         position: absolute;
         inset: 0;
         top: -150px;
-        height: 370px;
+        height: 372px;
         background: linear-gradient(
             to bottom,
             #000000 0%,
@@ -47,6 +47,16 @@
         left: 20%;
         text-wrap: balance;
         z-index: 1;
+    }
+
+    @media (max-width: 1024px) {
+        height: 60vh;
+
+        &__content {
+            max-width: 520px;
+            top: 10%;
+            left: 19%;
+        }
     }
 
     @media (max-width: 768px) {

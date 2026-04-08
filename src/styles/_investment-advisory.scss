@@ -4,6 +4,7 @@
     
     .container {
         position: relative;
+        margin-bottom: 4rem;
 
     &::before {
         content: '';
@@ -22,7 +23,17 @@
         linear-gradient(to left, $backgroundColorPrimary 0, transparent 11%),
         /* Imagem */
             url('../assets/images/danilo-advisory-wrap.png') right center / 68% auto no-repeat;
-    }
+    
+            @media (max-width: 768px) {
+                top: 7%;
+                background:
+                linear-gradient(to right, $backgroundColorPrimary 48%, transparent 55%),
+                linear-gradient(to bottom, $backgroundColorPrimary 15%, transparent 20%),
+                linear-gradient(to top, $backgroundColorPrimary 15%, transparent 20%),
+                linear-gradient(to left, $backgroundColorPrimary 0, transparent 8%),
+                    url('../assets/images/danilo-advisory-wrap.png') right center / 80% auto no-repeat;
+            }
+        }
 
     
     }
@@ -76,6 +87,38 @@
 
         &-description {
             margin-left: 2.5rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__content {
+            max-width: 430px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__content {
+            max-width: 300px;
+        }
+
+        &__benefits {
+            
+            &-item {
+            margin: .8rem 0;
+        }
+
+            &-icon {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        .btn {
+            padding: .3rem 5.8rem;
+            svg {
+                width: 18px;
+                height: 18px;
+            }
         }
     }
 }

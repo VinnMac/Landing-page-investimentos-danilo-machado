@@ -30,19 +30,32 @@
 }
 
 .container  {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
     @media (max-width: 768px) {
-        width: 100%;
+        max-width: 85%;
+        
     }
 }
 
 body {
     background-color: $backgroundColorPrimary;
-    padding-top: 2rem;
+    padding: 2rem 0 4rem;
 }
 
 .body--menu-open {
         overflow: hidden    ;
     }
+
+    html {
+        scroll-behavior: smooth;
+
+    @media (max-width: 768px) {
+        scroll-padding-top: 5rem;
+    }
+}
