@@ -13,6 +13,12 @@
         background-color: $textColorTertiary;
         border: 2px solid $textColorTertiary;
     }
+
+    @media (max-width: 480px) {
+        margin-top: .8rem;
+        padding: .4rem .4rem;
+        font-size: .8rem;
+    }
 }
 
 .btn {
@@ -29,5 +35,14 @@
     &:hover {
         background-color: darken($textColorTertiary, 10%);
         border: 2px solid darken($textColorTertiary, 10%);
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+        width: 100%;
+        letter-spacing: .05rem;
     }
 }

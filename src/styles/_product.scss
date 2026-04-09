@@ -51,4 +51,23 @@
                 }
             }
     }
+
+    @media (max-width: 480px) {
+
+        .title--section {
+        margin-bottom: 2rem;
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+        }
+
+        &__midia {
+            justify-content: center;
+
+                img {
+                    width: 200px;
+                }
+            }
+    }
 }

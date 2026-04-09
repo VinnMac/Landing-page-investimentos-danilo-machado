@@ -72,4 +72,18 @@
             left: 12%;
         }
     }
+
+    @media (max-width: 480px) {
+        height: 60vh;
+
+        &__image {
+            object-position: 62% center; 
+        }
+
+        &__content {
+            max-width: 360px;
+            top: 10%;
+            left: 5%;
+        }
+    }
 }

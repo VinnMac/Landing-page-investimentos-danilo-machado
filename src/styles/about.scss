@@ -88,4 +88,15 @@
             
         }
     }
+
+    @media (max-width: 480px) {
+
+        &__image {
+            img {
+                height: 300px;
+                object-position: center 50%;
+            }
+            
+        }
+    }
 }

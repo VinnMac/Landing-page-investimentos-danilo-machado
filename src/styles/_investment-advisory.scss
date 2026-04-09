@@ -121,4 +121,51 @@
             }
         }
     }
+
+    @media (max-width: 480px) {
+
+        .container {
+            max-width: 95%;
+
+            &::before {
+            top: 0;
+            height: 300px;
+            background:
+                linear-gradient(to right, $backgroundColorPrimary 0, transparent 15%),
+                linear-gradient(to bottom, $backgroundColorPrimary 0, transparent 5%),
+                linear-gradient(to top, $backgroundColorPrimary 0, transparent 25%),
+                linear-gradient(to left, $backgroundColorPrimary 0, transparent 15%),
+                    url('../assets/images/danilo-advisory-mobile.png') right center / 100% auto no-repeat;
+        }
+        }
+
+        &__content {
+            max-width: 100%;
+            padding-top: 300px;
+            gap: 1rem;
+
+        }
+
+        &__benefits {
+            
+            &-item {
+            margin: 1.5rem 0 .1rem;
+        }
+
+            &-icon {
+                width: 36px;
+                height: 36px;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            padding: 4rem auto;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
 }
