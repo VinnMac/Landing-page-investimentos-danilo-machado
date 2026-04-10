@@ -72,6 +72,10 @@
     @media (max-width: 768px) {
         font-size: 1.8rem;
     }
+
+    @media (max-width: 376px) {
+        font-size: 1.6rem;
+    }
 }
 
 .title--bg {
@@ -95,7 +99,7 @@
     }
 
     @media (max-width: 376px) {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         margin: 2.2rem 0;
     }
 }
