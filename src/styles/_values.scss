@@ -70,4 +70,24 @@
                 width: 40px ;
             }
         }
+
+        @media (max-width: 376px) {
+            &__item {
+                gap: .3rem;
+
+                .text--bg {
+                        font-size: 1.3rem;
+                    }
+    
+                    .subtitle--section {
+                        font-size: .9rem;
+                    }
+    
+                svg {
+                    height: 36px ;
+                    width: 36px ;
+                }
+            }
+
+        }
 }

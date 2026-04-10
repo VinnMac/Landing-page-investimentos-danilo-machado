@@ -46,6 +46,11 @@
         @include title(1.8rem, 600, 1, .08rem);
         color: $textColorSecondary;
     }
+
+    @media (max-width: 376px) {
+        @include title(1.6rem, 600, 1, .06rem);
+        color: $textColorSecondary;
+    }
 }
 
 .title--sm {
@@ -67,7 +72,6 @@
     @media (max-width: 768px) {
         font-size: 1.8rem;
     }
-    
 }
 
 .title--bg {
@@ -89,6 +93,11 @@
         font-size: 2.2rem;
         margin: 3rem 0;
     }
+
+    @media (max-width: 376px) {
+        font-size: 1.7rem;
+        margin: 2.2rem 0;
+    }
 }
 
 .subtitle--section {
@@ -104,5 +113,9 @@
     
     @media (max-width: 480px) {
         font-size: .8rem;
+    }
+
+    @media (max-width: 376px) {
+        font-size: .7rem;
     }
 }

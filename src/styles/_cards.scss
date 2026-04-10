@@ -71,11 +71,13 @@
     @media (max-width: 480px) {
         &__card {
             padding: .8rem;
+            gap: 1rem;
         }
 
         &__title {
             font-size: .8rem;
             padding-bottom: .7rem;
+            margin-bottom: 0;
         }
 
         &__side-right {
@@ -86,6 +88,21 @@
 
         .btn {
             margin-top: 2.5rem;
+        }
+    }
+
+    @media (max-width: 376px) {
+        &__card {
+            padding: .6rem;
+            gap: 1rem;
+        }
+
+        &__title {
+            margin-bottom: .9rem;
+        }
+
+        .btn {
+            margin-top: 2rem;
         }
     }
 }

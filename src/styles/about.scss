@@ -84,6 +84,7 @@
             img {
                 height: 380px;
                 object-position: center 40%;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             }
             
         }
@@ -91,12 +92,21 @@
 
     @media (max-width: 480px) {
 
+        .about__content {
+            gap: 1.5rem;
+        }
+
         &__image {
             img {
                 height: 300px;
                 object-position: center 50%;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             }
             
+        }
+
+        .subtitle--section {
+            margin: 0 auto 2.2rem
         }
     }
 }

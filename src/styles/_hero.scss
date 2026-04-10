@@ -82,7 +82,21 @@
 
         &__content {
             max-width: 360px;
-            top: 10%;
+            top: 6%;
+            left: 5%;
+        }
+    }
+
+    @media (max-width: 376px) {
+        height: 65vh;
+
+        &__image {
+            object-position: 64% center; 
+        }
+
+        &__content {
+            max-width: 240px;
+            top: 8%;
             left: 5%;
         }
     }
