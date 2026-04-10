@@ -33,6 +33,12 @@
             width: 1px;
             background-color: rgba($borderColor, .8);
         }
+
+        @media (max-width: 376px) {
+            .title--sm {
+                padding-bottom: 1rem;
+            }
+        }
     }
 
     &__side-right {
