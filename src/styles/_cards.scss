@@ -2,6 +2,7 @@
 
 .comparison {
     margin-top: 4rem;
+    padding-bottom: 4rem;
 
     &__card {
         display: flex;
@@ -42,6 +43,10 @@
 
     &__side-right {
         filter: drop-shadow(0 0 6px rgba($textColorTertiary, 0.4));
+
+        .subtitle--section {
+        color: $textColorTertiary;
+    }
     }
 
     .btn {

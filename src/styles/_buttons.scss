@@ -47,3 +47,48 @@
         letter-spacing: .05rem;
     }
 }
+
+.btn--premium {
+
+    padding: .5rem 6rem;
+            box-shadow: 0 10px 25px rgba($textColorTertiary, .25);
+            transition: all .3s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 14px 35px rgba($textColorTertiary, .35);
+            }
+
+            svg {
+                margin-left: .2rem;
+            }
+
+            @media (max-width: 1024px) {
+                padding: .5rem 4rem;
+            }
+
+    @media (max-width: 768px) {
+        padding: .5rem 5.8rem;
+        
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        width: 100%;
+        padding: .6rem 4rem;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    @media (max-width: 480px) {
+
+        width: 100%;
+        padding: .6rem 3rem;
+    }
+}

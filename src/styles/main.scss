@@ -13,6 +13,8 @@
 @use 'values';
 @use 'investment-advisory';
 @use 'product';
+@use 'mentoring';
+@use 'footer';
 
 // GLOBAL / SHARED
 @use 'buttons';
@@ -45,7 +47,11 @@
 
 body {
     background-color: $backgroundColorPrimary;
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 0;
+
+    @media (max-width: 768px) {
+        padding: 2rem 0 3rem;
+    }
 }
 
 .body--menu-open {
