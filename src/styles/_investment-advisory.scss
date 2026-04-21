@@ -10,7 +10,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        top: 20%;
+        top: 15%;
         z-index: -1;
         background:
             /* Gradiente da esquerda (cobre o texto) */
@@ -82,7 +82,7 @@
         &-item {
             display: flex;
             align-items: center;
-            margin: 1.2rem 0;
+            margin: 1rem 0;
         }
 
         &-icon {

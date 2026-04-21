@@ -34,19 +34,24 @@
     &__image {
         display: block;
         object-fit: cover;
+        object-position: 25% center;
         width: 100%;
-        height: 100%;
+        height: 70vh;
         position: relative;
         z-index: 0;
     }
 
     &__content {
-        max-width: 620px;
+        max-width: 720px;
         position: absolute;
-        top: 17%;
-        left: 20%;
+        top: 15%;
+        left: 18%;
         text-wrap: balance;
         z-index: 1;
+
+        .subtitle--section {
+            color: white;
+        }
     }
 
     @media (max-width: 1024px) {
