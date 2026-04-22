@@ -13,11 +13,15 @@
     }
 
     &__content {
-        grid-template-columns: 1.5fr .5fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     &__info {
         text-align: left;
+
+        &-list {
+            padding: 1.5rem 0;
+        }
 
         &-item {
             padding-bottom: .5rem;
