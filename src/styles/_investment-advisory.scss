@@ -48,7 +48,7 @@
             @media (max-width: 386px) {
                 background:
                 linear-gradient(to right, $backgroundColorPrimary 0, transparent 7%),
-                    linear-gradient(to bottom, $backgroundColorPrimary 6%, transparent 16%),
+                    linear-gradient(to bottom, $backgroundColorPrimary 7%, transparent 17%),
                     linear-gradient(to top, $backgroundColorPrimary 5%, transparent 25%),
                     linear-gradient(to left, $backgroundColorPrimary 0, transparent 10%),
                     url('../assets/images/danilo-advisory-mobile.png') right center / 100% auto no-repeat;
@@ -168,7 +168,7 @@
 
     @media (max-width: 386px) {
         .btn {
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
     }
 }
