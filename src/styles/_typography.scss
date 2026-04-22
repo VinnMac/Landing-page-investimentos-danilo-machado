@@ -43,12 +43,12 @@
     }
 
     @media (max-width: 480px) {
-        @include title(1.8rem, 600, 1.1, .02rem);
+        @include title(1.8rem, 600, 1.1, .03rem);
         color: $textColorSecondary;
     }
 
     @media (max-width: 386px) {
-        @include title(1.6rem, 600, 1.1, .06rem);
+        @include title(1.6rem, 600, 1.1, .03rem);
         color: $textColorSecondary;
     }
 }
