@@ -43,7 +43,7 @@
     }
 
     @media (max-width: 480px) {
-        @include title(2rem, 600, 1.1, .02rem);
+        @include title(1.8rem, 600, 1.1, .02rem);
         color: $textColorSecondary;
     }
 
@@ -94,7 +94,7 @@
     }
 
     @media (max-width: 480px) {
-        font-size: 2.2rem;
+        font-size: 1.7rem;
         margin: 2.2rem 0;
     }
 
