@@ -28,27 +28,27 @@
 }
 
 .text--hero {
-    @include title(2.8rem, 700, 1.05, .06rem);
+    @include title(2.8rem, 700, 1.2, .06rem);
     font-family: "Montserrat Alternates", sans-serif;
     color: $textColorSecondary;
 
     @media (max-width: 1024px) {
-        @include title(2.7rem, 600, 1.01, .1rem);
+        @include title(2.7rem, 600, 1.1, .06rem);
         color: $textColorSecondary;
     }
 
     @media (max-width: 768px) {
-        @include title(2.5rem, 600, 1.02, .1rem);
+        @include title(2.5rem, 600, 1.1, .04rem);
         color: $textColorSecondary;
     }
 
     @media (max-width: 480px) {
-        @include title(1.8rem, 600, 1, .08rem);
+        @include title(2rem, 600, 1.1, .02rem);
         color: $textColorSecondary;
     }
 
     @media (max-width: 376px) {
-        @include title(1.6rem, 600, 1, .06rem);
+        @include title(1.6rem, 600, 1.1, .06rem);
         color: $textColorSecondary;
     }
 }

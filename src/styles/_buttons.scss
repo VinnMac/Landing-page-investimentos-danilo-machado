@@ -10,7 +10,9 @@
     letter-spacing: .03rem;
     font-size: 1rem;
     font-weight: 700;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(4px);
 
     &:hover {
         background-color: $textColorTertiary;
@@ -18,9 +20,17 @@
     }
 
     @media (max-width: 480px) {
-        margin-top: .8rem;
+        margin-top: 1.4rem;
         padding: .7rem .9rem;
         font-size: .8rem;
+        letter-spacing: .04rem;
+        background-color: $textColorTertiary;
+        border-color: $textColorTertiary;
+
+        &:hover {
+        filter: brightness(1.1);
+        transform: translateY(-1px);
+        }
     }
 }
 
@@ -51,23 +61,22 @@
 }
 
 .btn--premium {
-
     padding: .5rem 6rem;
-            box-shadow: 0 10px 25px rgba($textColorTertiary, .25);
-            transition: all .3s ease;
+    box-shadow: 0 10px 25px rgba($textColorTertiary, .25);
+    transition: all .3s ease;
 
-            &:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 14px 35px rgba($textColorTertiary, .35);
-            }
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 35px rgba($textColorTertiary, .35);
+    }
 
-            svg {
-                margin-left: .2rem;
-            }
+    svg {
+        margin-left: .2rem;
+    }
 
-            @media (max-width: 1024px) {
-                padding: .5rem 4rem;
-            }
+    @media (max-width: 1024px) {
+        padding: .5rem 4rem;
+    }
 
     @media (max-width: 768px) {
         padding: .5rem 5.8rem;

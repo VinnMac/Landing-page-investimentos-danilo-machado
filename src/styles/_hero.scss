@@ -26,8 +26,8 @@
         inset: 0;
         background: linear-gradient(
             to right,
-            rgba(0,0,0,0.6),
-            rgba(0,0,0,0.2),
+            rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .2),
             transparent
         );
     }
@@ -54,17 +54,21 @@
             color: $textColorSecondary;
             text-align: left;
             font-size: .95rem;
-            padding-top: .2rem;
+            padding-top: .5rem;
         }
     }
 
     @media (max-width: 1024px) {
         min-height: 60vh;
 
+        &__image {
+            object-position: 40% center;
+        }
+
         &__content {
             max-width: 590px;
             top: 10%;
-            left: 10%;
+            left: 7%;
         }
     }
 
@@ -72,27 +76,41 @@
         min-height: 70vh;
 
         &__image {
-            object-position: 60% center; 
+            object-position: 55% center; 
         }
 
         &__content {
-            max-width: 380px;
+            max-width: 480px;
             top: 8%;
-            left: 12%;
+            left: 7%;
         }
     }
 
     @media (max-width: 480px) {
         min-height: 60vh;
 
+        &::after {
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, .8),
+            rgba(0, 0, 0, .4),
+            transparent
+        );
+    }
+
         &__image {
-            object-position: 62% center; 
+            object-position: 64% center; 
         }
 
         &__content {
-            max-width: 360px;
-            top: 6%;
-            left: 5%;
+            max-width: 380px;
+            top: 50%;
+            left: 8%;
+            
+        }
+
+        .subtitle--section {
+            display: none;
         }
     }
 

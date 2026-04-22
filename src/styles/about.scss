@@ -20,10 +20,11 @@
     &__values {
         background-color: rgba($borderColor, .2);
         border-radius: .6rem;
-        padding: 1rem 0;
+        padding: 1rem .5rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 3rem;
+        margin-bottom: 3rem;
 
         &-item {
             text-align: center;
@@ -123,6 +124,10 @@
         
         .subtitle--section {
             margin: 0 auto 3rem
+        }
+
+        &__values {
+            display: none;
         }
     }
 
