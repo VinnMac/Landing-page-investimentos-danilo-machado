@@ -18,6 +18,8 @@
     }
 
     &__values {
+        background-color: rgba(128, 128, 128, 0.201);
+        border-radius: 6px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 3rem;
