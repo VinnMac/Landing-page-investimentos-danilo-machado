@@ -33,10 +33,9 @@
         }
     }
 
-    &__image {
-        width: 520px;
-        
+    &__image {  
         img {
+            width: 520px; 
             object-fit: cover;
             object-position: center top;
             width: 100%;   
@@ -88,13 +87,17 @@
 
     @media (max-width: 480px) {
         &__image {
-            width: 300px;
+            img {
+                width: 300px;
+            }
         }
     }
 
     @media (max-width: 376px) {
         &__image {
-            width: 320px;
+            img {
+                width: 300px;
+            }
         }
     }
 }
