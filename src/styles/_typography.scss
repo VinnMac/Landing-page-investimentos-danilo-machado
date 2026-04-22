@@ -83,7 +83,7 @@
 }
 
 .title--section {
-    @include title(3.5rem, 700);
+    @include title(3.2rem, 700);
     margin: 4rem 0;
     color: $textColorTertiary;
     text-align: center;
@@ -107,6 +107,7 @@
 .subtitle--section {
     font-size: 1.05rem;
     font-weight: 300;
+    padding-top: 0.5rem;
     color: $subtitleColor;
     text-align: center;
 

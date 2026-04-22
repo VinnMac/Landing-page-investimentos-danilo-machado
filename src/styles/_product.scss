@@ -1,9 +1,14 @@
 @use 'variables' as *;
 
 .product {
+    margin-bottom: 6rem;
+
+    .title {
+        margin: 0;
+    }
 
     .title--section {
-        text-align: left;
+        text-wrap: balance;
         margin-bottom: 0;
     }
 
@@ -12,11 +17,15 @@
     }
 
     &__content {
-        grid-template-columns: .5fr 1.5fr;
+        grid-template-columns: .7fr 1.3fr;
     }
 
     &__info {
         max-width: 100%;
+
+        .product__description {
+            padding-top: 1rem;
+        }
     }
 
     &__benefits {

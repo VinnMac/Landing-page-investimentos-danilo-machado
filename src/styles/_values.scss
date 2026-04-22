@@ -2,7 +2,7 @@
 
 .values {
     padding: 1rem 0;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     width: 100%;
     background-color: $backgroundColorSecondary;
 
@@ -23,6 +23,10 @@
         }
 
         h3{
+            color: $textColorSecondary;
+        }
+
+        p {
             color: $textColorSecondary;
         }
 

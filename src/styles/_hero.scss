@@ -21,6 +21,7 @@
 
     &::after {
         content: '';
+        min-height: 70vh;
         position: absolute;
         inset: 0;
         background: linear-gradient(
@@ -36,7 +37,7 @@
         object-fit: cover;
         object-position: 25% center;
         width: 100%;
-        height: 70vh;
+        min-height: 70vh;
         position: relative;
         z-index: 0;
     }
@@ -52,13 +53,13 @@
         .subtitle--section {
             color: $textColorSecondary;
             text-align: left;
-            font-size: .8rem;
+            font-size: .95rem;
             padding-top: .2rem;
         }
     }
 
     @media (max-width: 1024px) {
-        height: 60vh;
+        min-height: 60vh;
 
         &__content {
             max-width: 520px;
@@ -68,7 +69,7 @@
     }
 
     @media (max-width: 768px) {
-        height: 70vh;
+        min-height: 70vh;
 
         &__image {
             object-position: 60% center; 
@@ -82,7 +83,7 @@
     }
 
     @media (max-width: 480px) {
-        height: 60vh;
+        min-height: 60vh;
 
         &__image {
             object-position: 62% center; 
@@ -96,7 +97,7 @@
     }
 
     @media (max-width: 376px) {
-        height: 65vh;
+        min-height: 65vh;
 
         &__image {
             object-position: 64% center; 

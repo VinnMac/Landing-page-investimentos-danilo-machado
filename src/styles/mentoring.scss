@@ -18,6 +18,19 @@
 
     &__info {
         text-align: left;
+
+        &-item {
+            padding-bottom: .5rem;
+
+            span {
+                color: $textColorTertiary;
+            }
+        }
+
+        .highlight {
+            display: inline-block;
+            margin: 1rem 0;
+        }
     }
 
     &__image {
