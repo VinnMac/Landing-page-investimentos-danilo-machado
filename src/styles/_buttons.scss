@@ -58,6 +58,11 @@
         width: 100%;
         letter-spacing: .05rem;
     }
+
+    @media (max-width: 386px) {
+        padding: .5rem 2rem;;
+        letter-spacing: .03rem;
+    }
 }
 
 .btn--premium {

@@ -59,8 +59,6 @@
     }
 
     @media (max-width: 1024px) {
-        min-height: 60vh;
-
         &__image {
             object-position: 40% center;
         }
@@ -73,8 +71,6 @@
     }
 
     @media (max-width: 768px) {
-        min-height: 70vh;
-
         &__image {
             object-position: 55% center; 
         }
@@ -87,16 +83,14 @@
     }
 
     @media (max-width: 480px) {
-        min-height: 60vh;
-
         &::after {
-        background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, .8),
-            rgba(0, 0, 0, .4),
-            transparent
-        );
-    }
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, .8),
+                rgba(0, 0, 0, .4),
+                transparent
+            );
+        }
 
         &__image {
             object-position: 64% center; 
@@ -115,16 +109,19 @@
     }
 
     @media (max-width: 386px) {
-        min-height: 65vh;
+        &::after {
+            min-height: 65vh;
+        }
 
         &__image {
             object-position: 64% center; 
+            min-height: 65vh;
         }
 
         &__content {
-            max-width: 240px;
-            top: 8%;
-            left: 5%;
+            max-width: 300px;
+            top: 53%;
+
         }
     }
 }
