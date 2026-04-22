@@ -110,17 +110,17 @@
 
     @media (max-width: 386px) {
         &::after {
-            min-height: 65vh;
+            min-height: 62vh;
         }
 
         &__image {
             object-position: 64% center; 
-            min-height: 65vh;
+            min-height: 62vh;
         }
 
         &__content {
             max-width: 300px;
-            top: 53%;
+            top: 52%;
 
         }
     }
