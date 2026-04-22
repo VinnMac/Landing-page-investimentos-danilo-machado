@@ -50,7 +50,10 @@
         z-index: 1;
 
         .subtitle--section {
-            color: white;
+            color: $textColorSecondary;
+            text-align: left;
+            font-size: .8rem;
+            padding-top: .2rem;
         }
     }
 

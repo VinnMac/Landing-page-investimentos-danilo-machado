@@ -28,7 +28,7 @@
 }
 
 .text--hero {
-    @include title(3rem, 600, 1.05, .1rem);
+    @include title(2.8rem, 700, 1.05, .06rem);
     font-family: "Montserrat Alternates", sans-serif;
     color: $textColorSecondary;
 
@@ -105,7 +105,7 @@
 }
 
 .subtitle--section {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 300;
     color: $subtitleColor;
     text-align: center;
