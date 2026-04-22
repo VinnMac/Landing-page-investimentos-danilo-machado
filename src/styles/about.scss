@@ -18,8 +18,9 @@
     }
 
     &__values {
-        background-color: rgba(128, 128, 128, 0.201);
-        border-radius: 6px;
+        background-color: rgba($borderColor, .2);
+        border-radius: .6rem;
+        padding: 1rem 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 3rem;
@@ -43,8 +44,8 @@
                 padding-left: 0;
             }
 
-            &:last-child {
-                border: none;
+            &:last-child::after {
+                display: none;
             }
 
             h4 {
