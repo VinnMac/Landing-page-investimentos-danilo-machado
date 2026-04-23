@@ -2,9 +2,7 @@ const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('menu-mobile');
 const blur = document.getElementById('blur');
 
-const menuLinks = document.querySelectorAll('.menu-mobile__nav-link');
-
-const mobileNavLinks = document.querySelectorAll('.menu-mobile__nav-link');
+const navLinks = document.querySelectorAll('.menu-mobile__nav-link');
 
 const sections = document.querySelectorAll('section[id]');
 
@@ -33,7 +31,7 @@ const closeMenu = () => {
 
 hamburger.addEventListener('click', toggleMenu);
 
-menuLinks.forEach(link => {
+navLinks.forEach(link => {
     link.addEventListener('click', () => {
         toggleMenu();
 
@@ -54,7 +52,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const id = entry.target.getAttribute('id');
 
-            mobileNavLinks.forEach(link => {
+            navLinks.forEach(link => {
                 link.classList.remove('active');
 
                 if (link.getAttribute('href') === `#${id}`) {
@@ -64,7 +62,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.6,
+    threshold: 0.4,
     rootMargin: '-64px 0px 0px 0px'
 });
 
