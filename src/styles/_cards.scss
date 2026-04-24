@@ -46,13 +46,20 @@
 
         .subtitle--section {
         color: $textColorTertiary;
-    }
+        }
     }
 
     .btn {
         margin-top: 4.2rem;
         padding: .35rem 4rem;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
     }
+
     a > svg {
         margin-left: .3rem;
     }
@@ -93,7 +100,12 @@
     }
 
         .btn {
+            padding: .6rem;
             margin-top: 2.5rem;
+
+            .icon {
+                transform: translateY(-2px);
+            }
         }
     }
 
