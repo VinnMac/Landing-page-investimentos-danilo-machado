@@ -1,3 +1,5 @@
+AOS.init();
+
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('menu-mobile');
 const blur = document.getElementById('blur');

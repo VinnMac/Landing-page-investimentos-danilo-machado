@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Oswald:wght@200..700&display=swap">
   <link rel="preload" as="image" href="./src/assets/images/bg-danilo.webp" fetchpriority="high">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -344,7 +345,7 @@
       </p>
     </div>
     <div class="container product__content">
-      <div class="product__midia">
+      <div class="product__midia" data-aos="fade-right">
         <img class="section-image" src="./src/assets/images/ebook-book.webp" loading="lazy" alt="E-book: O método que investidores profissionais usam para organizar e multiplicar patrimônio">
       </div>
       <div class="product__info">
@@ -375,7 +376,7 @@
   </section>
   <section class="comparison">
     <div class="container">
-      <div class="comparison__card">
+      <div class="comparison__card" data-aos="fade-up" data-aos-duration="500">
         <div class="comparison__side comparison__side-left">
           <h3 class="comparison__title title--sm">Sem arquitetura patrimonial</h3>
           <p class="subtitle--section">Seu cenário atual</p>
@@ -548,6 +549,7 @@
       </div>
       </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
