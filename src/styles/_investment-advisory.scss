@@ -147,7 +147,14 @@
         &__content {
             padding-top: 300px;
             gap: 1rem;
+        }
 
+        &__benefits {
+
+            &-icon {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 
