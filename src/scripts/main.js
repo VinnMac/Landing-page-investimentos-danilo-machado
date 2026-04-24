@@ -34,9 +34,6 @@ hamburger.addEventListener('click', toggleMenu);
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         toggleMenu();
-
-        // opcional: delay de 300ms
-        setTimeout(closeMenu, 300);
     });
 });
 
